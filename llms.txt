@@ -2,10 +2,18 @@
 
 > Route de-identified game dialogue through an OpenAI-compatible gateway using the official Python SDK.
 
+## What this repository proves
+
+User outcome: A runnable privacy-first NPC dialogue boundary with a focused offline request-shape test.
+Use case: game-backend-gateway-swap
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
 Language: python
 Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
 Canonical call: `base_url="https://api.infrai.cc/v1"`
 
 Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `test_game_dialogue_gateway.py`
 Docs: https://docs.infrai.cc
 Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

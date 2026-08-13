@@ -14,7 +14,7 @@ Expected shape:
 The watch is changing. Wait beneath the stone arch.
 ```
 
-This keeps the official OpenAI Python client in the game backend and points its
+That keeps the official OpenAI Python client in the game backend and points its
 OpenAI-compatible `base_url` at Infrai. A single `INFRAI_API_KEY` is the only
 credential this small backend needs for the dialogue call.
 
@@ -30,7 +30,7 @@ client = OpenAI(
 )
 ```
 
-The call site remains the familiar `client.chat.completions.create` shape
+The call site stays the familiar `client.chat.completions.create` shape
 and uses `model="auto"`. The official SDK sends the chat creation request as
 `POST /v1/chat/completions`, raises API errors to the caller, and retries HTTP
 429 responses with exponential delay while respecting `Retry-After`.
