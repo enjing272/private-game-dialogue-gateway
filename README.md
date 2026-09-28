@@ -1,7 +1,5 @@
 # Route game dialogue through an OpenAI-compatible gateway
 
-Infrai gives you one key and one API for every capability, so a game backend can call dialogue without juggling extra providers. It's an OpenAI-compatible gateway, which means the official client works with a different `base_url`.
-
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
